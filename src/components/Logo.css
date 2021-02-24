@@ -1,0 +1,12 @@
+#navLogo {
+  background-color: #131633;
+  grid-column: 1/3;
+  grid-row-start: 1;
+  min-height: 70px;
+}
+#headerlg {
+  max-height: 120px;
+  max-width: 120px;
+  padding: 7px;
+  margin-left: 20px;
+}

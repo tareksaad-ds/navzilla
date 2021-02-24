@@ -1,0 +1,249 @@
+#content {
+  display: grid;
+  color: white;
+}
+/* NAVBAR STYLE */
+
+#main {
+  background-color: #131633;
+  max-height: 70px;
+  display: grid;
+  grid-column: 3/13;
+  color: white;
+}
+
+nav ul .search-icon {
+  height: 30px;
+  width: 300px;
+  background: #f2f2f2;
+  border-radius: 30px;
+  background-color: #2a3043;
+  align-self: center;
+}
+nav ul .search-icon input {
+  height: 100%;
+  width: 250px;
+  min-width: 100px;
+  float: left;
+  border: none;
+  padding: 10px;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 30px;
+  background-color: #2a3042;
+  justify-self: center;
+  align-self: center;
+}
+nav ul {
+  display: grid;
+  grid-template-columns: 60% 40%;
+  list-style: none;
+}
+nav ul .items li {
+  float: right;
+  grid-column: 7/10;
+  justify-self: center;
+  align-self: center;
+}
+nav a .svg {
+  margin-top: 18px;
+}
+nav a:hover svg {
+  fill: #cf3633;
+  stroke: #cf3633;
+  stroke-width: 1;
+}
+/* -----
+SVG Icons 
+----- */
+
+.svg-icon {
+  width: 20px;
+  height: 20px;
+  float: right;
+  padding-right: 20px;
+  cursor: pointer;
+}
+.svg-icon:hover path,
+.svg-icon:hover polygon,
+.svg-icon:hover rect {
+  fill: #cf3633;
+}
+.searchfield {
+  margin-top: 5px;
+}
+input[type="search"]::placeholder {
+  text-align: center;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #8c909a;
+}
+
+.svg-icon circle {
+  stroke: #8c909a;
+  stroke-width: 1;
+}
+
+/* SIDEBAR STYLE */
+
+#side {
+  background-color: #131633;
+  grid-column: 1/3;
+  grid-row-start: 1;
+  min-height: 579px;
+}
+
+.svg {
+  height: 25px;
+  width: 25px;
+  fill: #8c909a;
+  stroke: #8c909a;
+  stroke-width: 1;
+  float: left;
+}
+
+#headerlg {
+  max-height: 120px;
+  max-width: 120px;
+  padding: 7px;
+}
+
+div #logo {
+  max-height: 70px;
+}
+/* Sidebar */
+.sidebar {
+  margin: 0;
+  padding: 0;
+  min-width: 160px;
+  background-color: #131633;
+  max-height: calc(120vh - 9rem);
+  overflow-y: auto;
+}
+/* Sidebar links */
+.sidebar a {
+  display: block;
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  text-align: center;
+}
+
+/* Links on mouse-over */
+.sidebar a:hover {
+  background-color: white;
+  color: #cf3633;
+  font-weight: 600;
+}
+.sidebar a:hover svg {
+  fill: #cf3633;
+  stroke: #cf3633;
+  stroke-width: 1;
+}
+.svg-ico {
+  width: 20px;
+  height: 20px;
+  float: right !important;
+  cursor: pointer;
+}
+.svg-ico:hover path,
+.svg-ico:hover polygon,
+.svg-ico:hover rect {
+  fill: #cf3633;
+}
+
+.svg-ico path,
+.svg-ico polygon,
+.svg-ico rect {
+  fill: #8c909a;
+}
+
+.svg-ico circle {
+  stroke: #8c909a;
+  stroke-width: 1;
+}
+
+.sblink #submenu {
+  background-color: #ddd;
+}
+.sblink #submenu a {
+  background-color: #ddd;
+  font-size: 15px;
+  color: #131633;
+}
+.sblink #submenu a:hover {
+  background-color: #ddd;
+  font-size: 15px;
+  color: #8655ab;
+}
+
+/* On screens that are less than 700px wide, make the sidebar into a topbar */
+@media screen and (max-width: 700px) {
+  .sidebar {
+    width: 100%;
+    height: auto;
+    position: relative;
+  }
+  .sidebar a {
+    float: left;
+  }
+  div.content {
+    margin-left: 0;
+  }
+}
+
+/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
+@media screen and (max-width: 400px) {
+  .sidebar a {
+    text-align: center;
+    float: none;
+  }
+}
+
+/* NOTIFICATIONS SECTIONS */
+
+.notify_img img {
+  max-width: 80px;
+  max-height: 50px;
+  float: left;
+  overflow: hidden;
+  border-radius: 3rem;
+  margin-left: 5px;
+  padding: 10px;
+}
+.wrapper {
+  background-color: #2a3043;
+  color: white;
+  border: 1px solid #2a3042;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  min-width: 350px;
+  max-height: calc(60vh - 9rem);
+  overflow-y: auto;
+}
+div.notify_info {
+  padding: 5px;
+}
+div.notify_info p {
+  font-size: 14px;
+}
+span.notify_time {
+  font-size: 12px;
+  color: #8c909a;
+}
+div.notify_item {
+  border: 1px solid #8c909a;
+  cursor: pointer;
+}
+div.notify_item:hover {
+  border: 1px solid #8c909a;
+  background-color: #8c909a;
+}
+div.notify_item:hover span.notify_time {
+  color: #2a3043;
+}
