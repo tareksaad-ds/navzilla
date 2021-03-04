@@ -8,7 +8,7 @@
   box-shadow: inset 0 0 2px 2px rgba(0, 0, 0, 0.5);
 }
 ::-webkit-scrollbar-thumb {
-  background-color: transparent #8c909a;
+  background-color: #8c909a;
   border-radius: 20% 0 20% 0;
 }
 

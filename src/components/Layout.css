@@ -109,7 +109,7 @@ input[type="search"]::placeholder {
 #headerlg {
   max-height: 120px;
   max-width: 120px;
-  padding: 7px;
+  padding: 6px;
 }
 
 div #logo {
@@ -121,7 +121,7 @@ div #logo {
   padding: 0;
   min-width: 160px;
   background-color: #131633;
-  max-height: calc(120vh - 9rem);
+  min-height: calc(115vh - 10rem);
   overflow-y: auto;
 }
 /* Sidebar links */

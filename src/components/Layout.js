@@ -5,11 +5,11 @@ import "./Layout.css";
 import Logo from "./Logo";
 
 function Layout() {
+  let langApp = document.getElementById("html");
   const [toggle, setToggle] = useState(true);
-
   return (
     <div id="content">
-      <Main toggle={toggle} setToggle={setToggle} />
+      <Main langApp={langApp} toggle={toggle} setToggle={setToggle} />
       {toggle ? <Sidebar /> : <Logo />}
     </div>
   );
