@@ -7,8 +7,9 @@ import image4 from "../assests/images/Jisoo.jpg";
 import "./Layout.css";
 
 function Notifications() {
+  let langApp = document.getElementById("html").dir;
   return (
-    <div className="wrapper">
+    <div className={langApp === "rtl" ? "wrapperRTL" : "wrapper"}>
       <div className="notification_wrap"></div>
       <div className="dropdown">
         <NotifyItem

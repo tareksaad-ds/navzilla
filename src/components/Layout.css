@@ -11,6 +11,15 @@
   grid-column: 3/13;
   color: white;
 }
+.notify {
+  background-color: #cf3633;
+  color: black;
+  padding: 5px;
+  font-size: 12px;
+  font-weight: 500;
+  border-radius: 30%;
+  cursor: pointer;
+}
 
 nav ul .search-icon {
   height: 30px;
@@ -37,11 +46,17 @@ nav ul .search-icon input {
 }
 nav ul {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 55% 40%;
   list-style: none;
 }
 nav ul .items li {
   float: right;
+  grid-column: 7/10;
+  justify-self: center;
+  align-self: center;
+}
+nav ul .itemsRTL li {
+  float: left;
   grid-column: 7/10;
   justify-self: center;
   align-self: center;
@@ -54,17 +69,89 @@ nav a:hover svg {
   stroke: #cf3633;
   stroke-width: 1;
 }
+
+/** AR **/
+.svg {
+  height: 25px;
+  width: 25px;
+  fill: #8c909a;
+  stroke: #8c909a;
+  stroke-width: 1;
+  float: right;
+}
+.svg-ico {
+  width: 20px;
+  height: 20px;
+  float: left !important;
+  cursor: pointer;
+}
+.svg-ico:hover path,
+.svg-ico:hover polygon,
+.svg-ico:hover rect {
+  fill: #cf3633;
+}
+
+.svg-ico path,
+.svg-ico polygon,
+.svg-ico rect {
+  fill: #8c909a;
+}
+
+.svg-ico circle {
+  stroke: #8c909a;
+  stroke-width: 1;
+}
+.toggler {
+  margin-top: 17px;
+}
 /* -----
 SVG Icons 
 ----- */
 
 .svg-icon {
-  width: 20px;
-  height: 20px;
+  width: 25px;
+  height: 25px;
   float: right;
-  padding-right: 20px;
   cursor: pointer;
+  margin-right: 17px;
+  margin-top: 2px;
 }
+.bell {
+  width: 25px;
+  height: 25px;
+  float: right;
+  cursor: pointer;
+  margin-right: 17px;
+  margin-top: 2px;
+}
+.bell:hover {
+  filter: #cf3633;
+  animation-name: bellHover;
+  animation-duration: 0.15s;
+  animation-iteration-count: infinite;
+}
+@keyframes bellHover {
+  50% {
+    transform: translateX(3px) rotate(2deg);
+  }
+}
+
+.bell:hover path,
+.bell:hover polygon,
+.bell:hover rect {
+  fill: #cf3633;
+}
+.bell path,
+.bell polygon,
+.bell rect {
+  fill: #8c909a;
+}
+
+.bell circle {
+  stroke: #8c909a;
+  stroke-width: 1;
+}
+
 .svg-icon:hover path,
 .svg-icon:hover polygon,
 .svg-icon:hover rect {
@@ -72,6 +159,7 @@ SVG Icons
 }
 .searchfield {
   margin-top: 5px;
+  margin-right: 5px;
 }
 input[type="search"]::placeholder {
   text-align: center;
@@ -138,11 +226,24 @@ div #logo {
   background-color: white;
   color: #cf3633;
   font-weight: 600;
+  animation: sidelink 3s infinite;
+}
+@keyframes sidelink {
+  50% {
+    text-shadow: 10px 10px 10px #8655ab;
+  }
 }
 .sidebar a:hover svg {
   fill: #cf3633;
   stroke: #cf3633;
   stroke-width: 1;
+  animation: sidesvg 3s infinite;
+}
+@keyframes sidesvg {
+  50% {
+    opacity: 200%;
+    font-weight: 900;
+  }
 }
 .svg-ico {
   width: 20px;
@@ -181,6 +282,29 @@ div #logo {
   color: #8655ab;
 }
 
+#gb-title {
+  color: grey;
+  font-size: 17px;
+  float: left;
+  position: relative;
+  margin: 10px;
+}
+#gb-items a {
+  color: white;
+  margin: 5px;
+  padding: 8px;
+}
+#gb-items a:hover {
+  color: purple;
+  background-color: #131633;
+  margin: 5px;
+  padding: 8px;
+}
+.group-sidebar {
+  border-top: 1px solid #757573;
+  border-bottom: 1px solid #757573;
+  padding: 5px;
+}
 /* On screens that are less than 700px wide, make the sidebar into a topbar */
 @media screen and (max-width: 700px) {
   .sidebar {
@@ -226,6 +350,17 @@ div #logo {
   max-height: calc(60vh - 9rem);
   overflow-y: auto;
 }
+.wrapperRTL {
+  background-color: #2a3043;
+  color: white;
+  border: 1px solid #2a3042;
+  position: absolute;
+  top: 70px;
+  left: 0;
+  min-width: 350px;
+  max-height: calc(60vh - 9rem);
+  overflow-y: auto;
+}
 div.notify_info {
   padding: 5px;
 }
@@ -246,4 +381,105 @@ div.notify_item:hover {
 }
 div.notify_item:hover span.notify_time {
   color: #2a3043;
+}
+
+/* PROFILE STYLE */
+
+img.proImage {
+  max-width: 30px;
+  max-height: 30px;
+  float: left;
+  overflow: hidden;
+  border-radius: 3rem;
+  margin-right: 10px;
+}
+.pro {
+  display: grid;
+  background-color: #2a3043;
+  right: 0;
+  border: 1px solid #2a3042;
+  position: absolute;
+  top: 70px;
+  min-width: 160px;
+  overflow-y: auto;
+}
+.rtlPro {
+  display: grid;
+  background-color: #2a3043;
+  left: 0;
+  border: 1px solid #2a3042;
+  position: absolute;
+  top: 70px;
+  min-width: 160px;
+  overflow-y: auto;
+}
+.profile a {
+  color: white;
+  text-decoration: auto;
+  padding: 10px;
+}
+.profile a:hover {
+  color: #cf3633;
+  text-decoration: auto;
+  padding: 10px;
+}
+/* HORIZONTAL SIDEBAR */
+
+.hor-sidebar {
+  background-color: #384059;
+  display: flex;
+  flex-direction: row;
+  min-height: 50px;
+  align-items: center;
+}
+#horizon-sidebar {
+  flex: 1;
+  cursor: pointer;
+}
+.horSb a {
+  color: white;
+  text-decoration: none;
+}
+
+.horSb a:hover {
+  color: #cf3633;
+  text-decoration: none;
+}
+.horSb a:hover .arrowB {
+  fill: #cf3633;
+  stroke: #cf3633;
+}
+.arrowB {
+  width: 20px;
+  height: 20px;
+  cursor: pointer;
+  margin-left: 10px;
+}
+.arrowB:hover path,
+.arrowB:hover polygon,
+.arrowB:hover rect {
+  fill: #cf3633;
+}
+
+.arrowB path,
+.arrowB polygon,
+.arrowB rect {
+  fill: white;
+}
+
+#hormenu {
+  position: absolute;
+  background-color: #2a3042;
+  overflow-y: auto;
+  top: 120px;
+  display: flex;
+  flex-direction: column;
+  min-width: 200px;
+  border-radius: 1%;
+}
+#hormenu a {
+  padding: 10px;
+}
+#none {
+  display: none;
 }

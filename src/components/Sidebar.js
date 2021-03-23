@@ -7,6 +7,7 @@ import { ReactComponent as Drop } from "../assests/icons/drop.svg";
 import { ReactComponent as Profile } from "../assests/icons/profile.svg";
 import { ReactComponent as Messages } from "../assests/icons/messages.svg";
 import { ReactComponent as Notes } from "../assests/icons/notes.svg";
+import SidebarGroups from "./SidebarGroups";
 
 function Sidebar() {
   return (
@@ -21,6 +22,10 @@ function Sidebar() {
           <a href="#drop2">Drop 2</a>
           <a href="#drop3">Drop 3</a>
         </SidebarItem>
+        <SidebarGroups title={"Leaderboard"}>
+          <a href="#tariq">Tarek Suarez</a>
+          <a href="#medz">Ahmed Saad</a>
+        </SidebarGroups>
         <SidebarItem svg={Profile} name={"Profile"}>
           <a href="#edit">Edit Profile</a>
           <a href="#logout">Logout</a>
@@ -32,6 +37,11 @@ function Sidebar() {
           <a href="#spam">Spam</a>
           <a href="#unread">Unread Messages</a>
         </SidebarItem>
+        <SidebarGroups title={"Charts"}>
+          <a href="#chart1">Chart 1</a>
+          <a href="#chart2">Chart 2</a>
+          <a href="#chart3">Chart 3</a>
+        </SidebarGroups>
       </div>
     </div>
   );
