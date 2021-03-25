@@ -12,7 +12,6 @@ function Layout() {
     <div>
       <div id="content">
         <Main toggle={toggle} setToggle={setToggle} />
-
         {toggle ? <Sidebar /> : <Logo />}
       </div>
       {toggle === false ? <HorzionSidebar /> : null}

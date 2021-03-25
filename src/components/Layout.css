@@ -29,6 +29,7 @@ nav ul .search-icon {
   background-color: #2a3043;
   align-self: center;
 }
+
 nav ul .search-icon input {
   height: 100%;
   width: 250px;
@@ -251,6 +252,10 @@ div #logo {
   float: right !important;
   cursor: pointer;
 }
+.sidebar a {
+  text-align: center;
+  float: none;
+}
 .svg-ico:hover path,
 .svg-ico:hover polygon,
 .svg-ico:hover rect {
@@ -304,28 +309,6 @@ div #logo {
   border-top: 1px solid #757573;
   border-bottom: 1px solid #757573;
   padding: 5px;
-}
-/* On screens that are less than 700px wide, make the sidebar into a topbar */
-@media screen and (max-width: 700px) {
-  .sidebar {
-    width: 100%;
-    height: auto;
-    position: relative;
-  }
-  .sidebar a {
-    float: left;
-  }
-  div.content {
-    margin-left: 0;
-  }
-}
-
-/* On screens that are less than 400px, display the bar vertically, instead of horizontally */
-@media screen and (max-width: 400px) {
-  .sidebar a {
-    text-align: center;
-    float: none;
-  }
 }
 
 /* NOTIFICATIONS SECTIONS */
@@ -482,4 +465,36 @@ img.proImage {
 }
 #none {
   display: none;
+}
+
+/* Displays */
+@media screen and (max-width: 700px) {
+  nav ul .search-icon {
+    width: 50%;
+  }
+  svg.svg-icon.searchfield {
+    display: none;
+  }
+}
+@media screen and (max-width: 650px) {
+  nav ul {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    list-style: none;
+  }
+  nav ul .search-icon input {
+    height: 100%;
+    width: 100px;
+    min-width: 100px;
+    float: left;
+    border: none;
+    padding: 10px;
+    outline: none;
+    color: #fff;
+    font-size: 16px;
+    border-radius: 30px;
+    background-color: #2a3042;
+    justify-self: center;
+    align-self: center;
+  }
 }
