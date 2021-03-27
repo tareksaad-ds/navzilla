@@ -225,13 +225,14 @@ div #logo {
 /* Links on mouse-over */
 .sidebar a:hover {
   background-color: white;
+
   color: #cf3633;
   font-weight: 600;
   animation: sidelink 3s infinite;
 }
 @keyframes sidelink {
   50% {
-    text-shadow: 10px 10px 10px #8655ab;
+    text-shadow: 3px 3px 3px #cf3633;
   }
 }
 .sidebar a:hover svg {
@@ -242,8 +243,8 @@ div #logo {
 }
 @keyframes sidesvg {
   50% {
-    opacity: 200%;
-    font-weight: 900;
+    height: 25px;
+    width: 25px;
   }
 }
 .svg-ico {
@@ -285,6 +286,12 @@ div #logo {
   background-color: #ddd;
   font-size: 15px;
   color: #8655ab;
+  animation: subeffects 3s infinite;
+}
+@keyframes subeffects {
+  50% {
+    text-shadow: 3px 3px 3px #8655ab;
+  }
 }
 
 #gb-title {
@@ -308,7 +315,6 @@ div #logo {
 .group-sidebar {
   border-top: 1px solid #757573;
   border-bottom: 1px solid #757573;
-  padding: 5px;
 }
 
 /* NOTIFICATIONS SECTIONS */
@@ -497,4 +503,7 @@ img.proImage {
     justify-self: center;
     align-self: center;
   }
+}
+div#gb-items a:hover {
+  color: #cf3633;
 }

@@ -12,17 +12,15 @@ import Profile from "./Profile";
 function Main({ setToggle, toggle, opts }) {
   const [show, setShow] = useState(false);
   const [profile, showPro] = useState(false);
-  console.log('opts', opts.direction)
+  document.getElementsByTagName("html")[0].dir = opts.direction;
   return (
     <div id="main">
       <nav>
-        {
-          !opts.isHorizontal && (
-            <Link to={toggle} onClick={() => setToggle(!toggle)}>
-              <Lang />
-            </Link>
-          )
-        }
+        {!opts.isHorizontal && (
+          <Link to={toggle} onClick={() => setToggle(!toggle)}>
+            <Lang />
+          </Link>
+        )}
 
         <ul>
           <li className="search-icon">
