@@ -5,16 +5,24 @@ import "./Layout.css";
 import Logo from "./Logo";
 import HorzionSidebar from "./HorzionSidebar";
 
-function Layout() {
+function Layout(props) {
   const [toggle, setToggle] = useState(true);
 
   return (
     <div>
       <div id="content">
-        <Main toggle={toggle} setToggle={setToggle} />
-        {toggle ? <Sidebar /> : <Logo />}
+        <Main toggle={toggle} opts={{...props}} setToggle={setToggle} />
+        {
+          !props.isHorizontal? (
+            <>
+              {toggle ? <Sidebar items={props.items} /> : <Logo />}
+            </>
+          ) : (
+            <Logo />
+          )
+        }
       </div>
-      {toggle === false ? <HorzionSidebar /> : null}
+      {props.isHorizontal && <HorzionSidebar items={props.items} />} 
     </div>
   );
 }

@@ -9,24 +9,27 @@ import { ReactComponent as Lang } from "../assests/icons/lang.svg";
 import Notifications from "./Notifications";
 import Profile from "./Profile";
 
-function Main({ setToggle, toggle }) {
+function Main({ setToggle, toggle, opts }) {
   const [show, setShow] = useState(false);
   const [profile, showPro] = useState(false);
-  let langApp = document.getElementById("html").dir;
-
+  console.log('opts', opts.direction)
   return (
     <div id="main">
       <nav>
-        <Link to={toggle} onClick={() => setToggle(!toggle)}>
-          <Lang />
-        </Link>
+        {
+          !opts.isHorizontal && (
+            <Link to={toggle} onClick={() => setToggle(!toggle)}>
+              <Lang />
+            </Link>
+          )
+        }
 
         <ul>
           <li className="search-icon">
             <input type="search" placeholder="Search..."></input>
             <SearchIcon />
           </li>
-          <div className={langApp === "rtl" ? "itemsRTL" : "items"}>
+          <div className={opts.direction === "rtl" ? "itemsRTL" : "items"}>
             <li className="profile" onClick={() => showPro(!profile)}>
               <Link>
                 <img src={Yoojung} className="proImage" alt="profile"></img>
