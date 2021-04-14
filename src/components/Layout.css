@@ -36,7 +36,6 @@ nav ul .search-icon input {
   min-width: 50px;
   float: left;
   border: none;
-  padding: 10px;
   outline: none;
   color: #fff;
   font-size: 16px;
@@ -477,9 +476,10 @@ img.proImage {
 }
 @media screen and (max-width: 650px) {
   nav ul {
-    display: grid;
-    grid-template-columns: 40% 60%;
+    display: -webkit-box;
+    grid-template-columns: 30% 70%;
     list-style: none;
+    margin-left: auto 0;
   }
   nav ul .search-icon input {
     height: 100%;
@@ -487,7 +487,6 @@ img.proImage {
     min-width: 100px;
     float: left;
     border: none;
-    padding: 10px;
     outline: none;
     color: #fff;
     font-size: 16px;
