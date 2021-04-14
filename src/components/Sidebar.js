@@ -1,8 +1,8 @@
 import React from "react";
 import "./Layout.css";
-import image from "../assests/navi2.png";
 import SidebarItem from "./SidebarItem";
 import SidebarGroups from "./SidebarGroups";
+import SideLogo from "./SideLogo";
 
 function Sidebar(props) {
   const itemRender = (item) => {
@@ -40,7 +40,7 @@ function Sidebar(props) {
   return (
     <div id="side">
       <div id="logo">
-        <img id="headerlg" src={image} alt="logo" />
+        <SideLogo />
       </div>
       <div className="sidebar">
         {/* This is the dynamic way */}

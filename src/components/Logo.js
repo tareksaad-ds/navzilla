@@ -1,6 +1,6 @@
 import React from "react";
 import "./Logo.css";
-import image from "../assests/navi2.png";
+import image from "../assests/navsm.png";
 
 function Logo() {
   return (
