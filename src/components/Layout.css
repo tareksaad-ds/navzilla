@@ -477,7 +477,7 @@ img.proImage {
 @media screen and (max-width: 650px) {
   nav ul {
     display: -webkit-box;
-    grid-template-columns: 50% 50%;
+    grid-template-columns: 30% 30%;
     list-style: none;
     margin-left: auto 0;
   }

@@ -8,15 +8,12 @@ import HorzionSidebar from "./HorzionSidebar";
 function Layout(props) {
   const [toggle, setToggle] = useState(true);
 
-  const handleResize = () => {
+  useEffect(() => {
     if (window.innerWidth < 650) {
       setToggle(false);
     } else {
       setToggle(true);
     }
-  };
-  useEffect(() => {
-    window.addEventListener("resize", handleResize);
   }, []);
 
   return (
