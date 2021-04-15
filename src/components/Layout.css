@@ -13,10 +13,10 @@
 }
 .notify {
   background-color: #cf3633;
-  color: wheat;
+  color: black;
   padding: 3px 5px;
   font-size: 12px;
-  font-weight: 700;
+  font-weight: 500;
   border-radius: 50%;
   cursor: pointer;
 }
@@ -186,8 +186,8 @@ input[type="search"]::placeholder {
 }
 
 .svg {
-  height: 20px;
-  width: 20px;
+  height: 25px;
+  width: 25px;
   fill: #8c909a;
   stroke: #8c909a;
   stroke-width: 1;
@@ -479,20 +479,14 @@ img.proImage {
     display: -webkit-box;
     grid-template-columns: 30% 70%;
     list-style: none;
-  }
-  .wrapper,
-  .wrapperRTL {
-    min-width: 250px;
-  }
-  .pro,
-  .rtlPro {
-    min-width: 100px;
+    margin-left: auto 0;
   }
   nav ul .search-icon input {
     height: 100%;
     width: 100px;
     min-width: 100px;
-    margin-left: 0 auto !important;
+    float: left;
+    border: none;
     outline: none;
     color: #fff;
     font-size: 16px;
