@@ -13,6 +13,7 @@ function Main({ setToggle, toggle, opts }) {
   const [show, setShow] = useState(false);
   const [profile, showPro] = useState(false);
   document.getElementsByTagName("html")[0].dir = opts.direction;
+
   return (
     <div id="main">
       <nav>
