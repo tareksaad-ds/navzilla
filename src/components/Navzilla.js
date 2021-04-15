@@ -7,13 +7,12 @@ import HorzionSidebar from "./HorzionSidebar";
 
 function Layout(props) {
   const [toggle, setToggle] = useState(true);
-  const [isMobile, setIsMobile] = useState(false);
 
   const handleResize = () => {
     if (window.innerWidth < 650) {
-      setIsMobile(true);
+      setToggle(false);
     } else {
-      setIsMobile(false);
+      setToggle(true);
     }
   };
   useEffect(() => {
@@ -23,11 +22,7 @@ function Layout(props) {
   return (
     <div>
       <div id="content">
-        <Main
-          toggle={isMobile ? !toggle : toggle}
-          opts={{ ...props }}
-          setToggle={setToggle}
-        />
+        <Main toggle={toggle} opts={{ ...props }} setToggle={setToggle} />
 
         {!props.isHorizontal ? (
           <>{toggle ? <Sidebar items={props.items} /> : <Logo />}</>
