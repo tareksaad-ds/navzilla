@@ -160,6 +160,7 @@ SVG Icons
 .searchfield {
   margin-top: 5px;
   margin-right: 5px;
+  width: 45px;
 }
 input[type="search"]::placeholder {
   text-align: center;
@@ -470,9 +471,6 @@ img.proImage {
   nav ul .search-icon {
     width: 50%;
   }
-  svg.svg-icon.searchfield {
-    display: none;
-  }
 }
 @media screen and (max-width: 650px) {
   nav ul {
@@ -481,6 +479,7 @@ img.proImage {
     list-style: none;
     margin-left: auto 0;
   }
+
   nav ul .search-icon input {
     height: 100%;
     width: 100px;
@@ -498,4 +497,15 @@ img.proImage {
 }
 div#gb-items a:hover {
   color: #cf3633;
+}
+nav ul .sIcon input {
+  position: absolute;
+  top: 70px;
+  left: 100px;
+  background-color: #384059;
+  min-height: 30px;
+}
+nav ul .sIcon input:focus {
+  color: white;
+  font-size: 14px;
 }

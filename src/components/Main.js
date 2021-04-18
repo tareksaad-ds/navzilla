@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./Layout.css";
 import { ReactComponent as SearchIcon } from "../assests/icons/search.svg";
 import Yoojung from "../assests/images/yoojung.jpg";
@@ -13,6 +13,15 @@ function Main({ setToggle, toggle, opts }) {
   const [show, setShow] = useState(false);
   const [profile, showPro] = useState(false);
   document.getElementsByTagName("html")[0].dir = opts.direction;
+  const [search, showSearch] = useState(false);
+  useEffect(() => {
+    if (window.innerWidth < 650) {
+      showSearch(false);
+    } else {
+      showSearch(true);
+    }
+  }, []);
+  const [searchBtn, setSearch] = useState(false);
 
   return (
     <div id="main">
@@ -24,9 +33,14 @@ function Main({ setToggle, toggle, opts }) {
         )}
 
         <ul>
-          <li className="search-icon">
-            <input type="search" placeholder="Search..."></input>
-            <SearchIcon />
+          <li className={search ? "search-icon" : "sIcon"}>
+            {searchBtn ? (
+              <input type="search" placeholder="Search..."></input>
+            ) : (
+              <></>
+            )}
+
+            <SearchIcon onClick={() => setSearch(!searchBtn)} />
           </li>
           <div className={opts.direction === "rtl" ? "itemsRTL" : "items"}>
             <li className="profile" onClick={() => showPro(!profile)}>
