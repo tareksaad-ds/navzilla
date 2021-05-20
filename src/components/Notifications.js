@@ -2,7 +2,7 @@ import React from "react";
 import NotifyItem from "./NotifyItem";
 import image1 from "../assests/images/Lucy.jpg";
 import image2 from "../assests/images/Lisa.jpg";
-import image3 from "../assests/images/Doyoen.jpg";
+import image3 from "../assests/images/Doyeon.jpg";
 import image4 from "../assests/images/Jisoo.jpg";
 import "./Layout.css";
 

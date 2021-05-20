@@ -20,7 +20,7 @@ function App() {
               title: "Dashboard",
               type: "link", // link | menu | group
               icon: Dashboard, // icon component
-              link: "#dashboard",
+              link: "dashboard",
             },
             {
               title: "Drop",
@@ -30,11 +30,11 @@ function App() {
                 // links only
                 {
                   title: "drop 1",
-                  link: "#drop1",
+                  link: "drop1",
                 },
                 {
                   title: "drop 2",
-                  link: "#drop2",
+                  link: "drop2",
                 },
               ],
             },
@@ -46,12 +46,12 @@ function App() {
                 {
                   title: "Tariq Suarez",
                   type: "link", // link | menu | group
-                  link: "#tariq",
+                  link: "tariq",
                 },
                 {
                   title: "Medz Coder",
                   type: "link", // link | menu | group
-                  link: "#medz",
+                  link: "medz",
                 },
                 {
                   title: "Scores",
@@ -60,11 +60,11 @@ function App() {
                   menu: [
                     {
                       title: "224",
-                      link: "#score1",
+                      link: "score1",
                     },
                     {
                       title: "115",
-                      link: "#score2",
+                      link: "score2",
                     },
                   ],
                 },
@@ -77,11 +77,11 @@ function App() {
               menu: [
                 {
                   title: "Edit Profile",
-                  link: "#edit",
+                  link: "edit",
                 },
                 {
                   title: "Logout",
-                  link: "#logout",
+                  link: "logout",
                 },
               ],
             },
@@ -89,7 +89,7 @@ function App() {
               title: "Notes",
               type: "link",
               icon: Notes,
-              link: "#notes",
+              link: "notes",
             },
             {
               title: "Charts",
@@ -98,12 +98,12 @@ function App() {
                 {
                   title: "Chart 1",
                   type: "link",
-                  link: "#chart1",
+                  link: "chart1",
                 },
                 {
                   title: "Chart 2",
                   type: "link",
-                  link: "#chart2",
+                  link: "chart2",
                 },
               ],
             },
@@ -116,12 +116,12 @@ function App() {
                 {
                   title: "Message 1",
                   type: "link",
-                  link: "#message1",
+                  link: "message1",
                 },
                 {
                   title: "Message 2",
                   type: "link",
-                  link: "#message2",
+                  link: "message2",
                 },
               ],
             },

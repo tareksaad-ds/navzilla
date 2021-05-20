@@ -24,11 +24,11 @@ function Main({ setToggle, toggle, opts }) {
   const [searchBtn, setSearch] = useState(false);
 
   return (
-    <div id="main">
+    <div id="main" className={opts.direction === "rtl" ? "itemsRTL" : ""}>
       <nav>
         {!opts.isHorizontal && (
           <Link to={toggle} onClick={() => setToggle(!toggle)}>
-            <Lang />
+            <Lang className="svg langSvg" />
           </Link>
         )}
 

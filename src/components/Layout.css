@@ -6,16 +6,16 @@
 
 #main {
   background-color: #131633;
-  max-height: 70px;
+  max-height: 68px;
   display: grid;
   grid-column: 3/13;
   color: white;
 }
 .notify {
-  background-color: #cf3633;
+  background-color: #8655ab;
   color: black;
-  padding: 3px 5px;
-  font-size: 12px;
+  padding: 2px 5px;
+  font-size: 14px;
   font-weight: 500;
   border-radius: 50%;
   cursor: pointer;
@@ -65,8 +65,8 @@ nav a .svg {
   margin-top: 18px;
 }
 nav a:hover svg {
-  fill: #cf3633;
-  stroke: #cf3633;
+  fill: #8655ab;
+  stroke: #8655ab;
   stroke-width: 1;
 }
 
@@ -79,6 +79,9 @@ nav a:hover svg {
   stroke-width: 1;
   float: right;
 }
+.itemsRTL .langSvg {
+  float: right !important;
+}
 .svg-ico {
   width: 20px;
   height: 20px;
@@ -88,7 +91,7 @@ nav a:hover svg {
 .svg-ico:hover path,
 .svg-ico:hover polygon,
 .svg-ico:hover rect {
-  fill: #cf3633;
+  fill: #8655ab;
 }
 
 .svg-ico path,
@@ -125,7 +128,7 @@ SVG Icons
   margin-top: 2px;
 }
 .bell:hover {
-  filter: #cf3633;
+  filter: #8655ab;
   animation-name: bellHover;
   animation-duration: 0.15s;
   animation-iteration-count: infinite;
@@ -139,7 +142,7 @@ SVG Icons
 .bell:hover path,
 .bell:hover polygon,
 .bell:hover rect {
-  fill: #cf3633;
+  fill: #8655ab;
 }
 .bell path,
 .bell polygon,
@@ -155,7 +158,7 @@ SVG Icons
 .svg-icon:hover path,
 .svg-icon:hover polygon,
 .svg-icon:hover rect {
-  fill: #cf3633;
+  fill: #8655ab;
 }
 .searchfield {
   margin-top: 5px;
@@ -224,18 +227,14 @@ div #logo {
 .sidebar a:hover {
   background-color: white;
 
-  color: #cf3633;
+  color: #8655ab;
   font-weight: 600;
   animation: sidelink 3s infinite;
 }
-@keyframes sidelink {
-  50% {
-    text-shadow: 3px 3px 3px #cf3633;
-  }
-}
+
 .sidebar a:hover svg {
-  fill: #cf3633;
-  stroke: #cf3633;
+  fill: #8655ab;
+  stroke: #8655ab;
   stroke-width: 1;
   animation: sidesvg 3s infinite;
 }
@@ -253,7 +252,7 @@ div #logo {
 .svg-ico:hover path,
 .svg-ico:hover polygon,
 .svg-ico:hover rect {
-  fill: #cf3633;
+  fill: #8655ab;
 }
 
 .svg-ico path,
@@ -281,11 +280,6 @@ div #logo {
   color: #8655ab;
   animation: subeffects 3s infinite;
 }
-@keyframes subeffects {
-  50% {
-    text-shadow: 3px 3px 3px #8655ab;
-  }
-}
 
 #gb-title {
   color: grey;
@@ -300,8 +294,8 @@ div #logo {
   padding: 8px;
 }
 #gb-items a:hover {
-  color: purple;
-  background-color: #131633;
+  color: #8655ab;
+  background-color: white;
   margin: 5px;
   padding: 8px;
 }
@@ -313,8 +307,8 @@ div #logo {
 /* NOTIFICATIONS SECTIONS */
 
 .notify_img img {
-  max-width: 80px;
-  max-height: 50px;
+  width: 50px;
+  height: 50px;
   float: left;
   overflow: hidden;
   border-radius: 3rem;
@@ -326,7 +320,7 @@ div #logo {
   color: white;
   border: 1px solid #2a3042;
   position: absolute;
-  top: 70px;
+  top: 68px;
   right: 0;
   min-width: 350px;
   max-height: calc(60vh - 9rem);
@@ -337,7 +331,7 @@ div #logo {
   color: white;
   border: 1px solid #2a3042;
   position: absolute;
-  top: 70px;
+  top: 68px;
   left: 0;
   min-width: 350px;
   max-height: calc(60vh - 9rem);
@@ -368,8 +362,8 @@ div.notify_item:hover span.notify_time {
 /* PROFILE STYLE */
 
 img.proImage {
-  max-width: 30px;
-  max-height: 30px;
+  width: 40px;
+  height: 40px;
   float: left;
   overflow: hidden;
   border-radius: 3rem;
@@ -381,7 +375,7 @@ img.proImage {
   right: 0;
   border: 1px solid #2a3042;
   position: absolute;
-  top: 70px;
+  top: 68px;
   min-width: 160px;
   overflow-y: auto;
 }
@@ -391,7 +385,7 @@ img.proImage {
   left: 0;
   border: 1px solid #2a3042;
   position: absolute;
-  top: 70px;
+  top: 68px;
   min-width: 160px;
   overflow-y: auto;
 }
@@ -401,7 +395,7 @@ img.proImage {
   padding: 10px;
 }
 .profile a:hover {
-  color: #cf3633;
+  color: #8655ab;
   text-decoration: auto;
   padding: 10px;
 }
@@ -424,12 +418,12 @@ img.proImage {
 }
 
 .horSb a:hover {
-  color: #cf3633;
+  color: #8655ab;
   text-decoration: none;
 }
 .horSb a:hover .arrowB {
-  fill: #cf3633;
-  stroke: #cf3633;
+  fill: #8655ab;
+  stroke: #8655ab;
 }
 .arrowB {
   width: 20px;
@@ -440,7 +434,7 @@ img.proImage {
 .arrowB:hover path,
 .arrowB:hover polygon,
 .arrowB:hover rect {
-  fill: #cf3633;
+  fill: #8655ab;
 }
 
 .arrowB path,
@@ -453,7 +447,7 @@ img.proImage {
   position: absolute;
   background-color: #2a3042;
   overflow-y: auto;
-  top: 120px;
+  top: 118px;
   display: flex;
   flex-direction: column;
   min-width: 200px;
@@ -496,11 +490,11 @@ img.proImage {
   }
 }
 div#gb-items a:hover {
-  color: #cf3633;
+  color: #8655ab;
 }
 nav ul .sIcon input {
   position: absolute;
-  top: 70px;
+  top: 68px;
   left: 100px;
   background-color: #384059;
   min-height: 30px;
