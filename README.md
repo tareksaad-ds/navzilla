@@ -1,6 +1,9 @@
 # Navzilla - A reusable sidebar and navbar template
 
-## Description: 
+![Navzilla](https://i.imgur.com/GzH1Unh.jpg)
+
+## Description:
+
 Navzilla is a fully customizable dashboard skeleton with lots of features that includes:
 
 - Variety of item types: Single item, Dropdowns, & Item groups.
@@ -12,12 +15,13 @@ Navzilla is a fully customizable dashboard skeleton with lots of features that i
 - Pass a list of objects into `<Navzilla />` to initialize.
 
 ## Live demo:
+
 Check the live demo on [this link.](https://happy-mestorf-5d309e.netlify.app/)
 
 ## Code example:
 
-  ```javascript
-  <Navzilla
+```javascript
+<Navzilla
   isHorizontal={false}
   direction={"ltr"}
   items={[
@@ -132,9 +136,11 @@ Check the live demo on [this link.](https://happy-mestorf-5d309e.netlify.app/)
     },
   ]}
 />
-  ```
+```
 
 ## Support
+
 Support for this template is delivered in ways:
+
 - If you found a bug or issue, please submit it [here](https://github.com/tareksaad-ds/navzilla/issues/new).
 - Otherwise, if you need installation help or adding new features to your installation please contact me through [my email](mailto:tareksaad.ds@gmail.com) or through my [Upwork account](https://www.upwork.com/o/profiles/users/~012c985ae0ec2c2d76/).
